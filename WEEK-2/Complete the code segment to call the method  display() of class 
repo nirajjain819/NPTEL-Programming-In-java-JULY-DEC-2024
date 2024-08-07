@@ -1,0 +1,28 @@
+class Former {
+    // This is a method in class Former
+    public void display() {
+        System.out.println("This is Former Class.");
+    }
+}
+
+// This is the class named Latter
+class Latter {
+    // This is a method in class Latter
+    public void display() {
+        System.out.println("This is Latter Class.");
+    }
+}
+
+public class W02_P1 {
+    public static void main(String[] args) {
+        // Create instances of Former and Latter classes
+        Former formerInstance = new Former();
+        Latter latterInstance = new Latter();
+
+        // Call display() method of Former class
+        formerInstance.display();
+
+        // Call display() method of Latter class
+        latterInstance.display();
+    }
+}
