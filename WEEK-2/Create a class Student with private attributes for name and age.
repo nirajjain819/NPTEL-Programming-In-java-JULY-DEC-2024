@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+class W02_P2 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    // Read input
+    System.out.print("Enter name: ");
+    String name = scanner.nextLine();
+    System.out.print("Enter age: ");
+    int age = scanner.nextInt();
+
+    // Create Student object
+    Student student = new Student(name, age);
+
+    // Print student details
+    System.out.println("Student Name: " + student.getName());
+    System.out.println("Student Age: " + student.getAge());
+
+    scanner.close();
+  }
+}
+
+class Student {
+  // Create 2 private variables name and age
+  private String name;
+  private int age;
+
+  // Create a constructor
+  public Student(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // Create getName() function
+  public String getName() {
+    return name;
+  }
+
+  // Create getAge() function
+  public int getAge() {
+    return age;
+  }
+}
